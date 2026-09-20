@@ -3,72 +3,272 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>隱私權政策 - 磚心反彈 (Bounce in Mind)</title>
+    <title>隱私權政策 Privacy Policy | 磚心反彈 Bounce in Mind</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; }
-        h1 { color: #1a73e8; border-bottom: 2px solid #1a73e8; padding-bottom: 10px; }
-        h2 { color: #202124; margin-top: 24px; }
-        p, li { font-size: 15px; }
-        ul { padding-left: 20px; }
-        .footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #ccc; font-size: 13px; color: #666; }
+        :root {
+            --bg-color: #0d111a;
+            --card-bg: #151b28;
+            --accent-cyan: #00e5ff;
+            --accent-gold: #ffd700;
+            --text-primary: #e2e8f0;
+            --text-secondary: #94a3b8;
+            --border-color: #222d42;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang TC", "Microsoft JhengHei", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.7;
+            padding: 24px 16px;
+        }
+
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            background-color: var(--card-bg);
+            border-radius: 16px;
+            padding: 36px 28px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        header {
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 20px;
+            margin-bottom: 28px;
+        }
+
+        h1 {
+            color: var(--accent-cyan);
+            font-size: 26px;
+            font-weight: 800;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
+
+        .meta-info {
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+
+        .tag-pill {
+            display: inline-block;
+            background: rgba(0, 229, 255, 0.12);
+            color: var(--accent-cyan);
+            padding: 2px 10px;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: 600;
+            margin-top: 6px;
+        }
+
+        h2 {
+            color: var(--accent-gold);
+            font-size: 18px;
+            margin: 28px 0 12px 0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        p, ul, ol {
+            margin-bottom: 14px;
+            font-size: 15px;
+            color: var(--text-primary);
+        }
+
+        ul, ol {
+            padding-left: 22px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        strong {
+            color: #ffffff;
+        }
+
+        .table-wrap {
+            overflow-x: auto;
+            margin: 16px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 10px 14px;
+            border: 1px solid var(--border-color);
+        }
+
+        th {
+            background-color: rgba(255, 255, 255, 0.05);
+            color: var(--accent-cyan);
+        }
+
+        .highlight-box {
+            background: rgba(0, 229, 255, 0.06);
+            border-left: 4px solid var(--accent-cyan);
+            padding: 14px 18px;
+            border-radius: 0 10px 10px 0;
+            margin: 16px 0;
+            font-size: 14px;
+        }
+
+        a {
+            color: var(--accent-cyan);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            margin-top: 36px;
+            border-top: 1px solid var(--border-color);
+            padding-top: 20px;
+            text-align: center;
+            font-size: 13px;
+            color: var(--text-secondary);
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 24px 18px;
+            }
+            h1 {
+                font-size: 22px;
+            }
+        }
     </style>
 </head>
 <body>
 
-    <h1>《磚心反彈》隱私權政策 (Privacy Policy)</h1>
-    <p>最近更新日期：2026 年 8 月 22 日</p>
+<div class="container">
+    <header>
+        <h1>《磚心反彈》（Bounce in Mind）個人資料保護與隱私權政策</h1>
+        <div class="meta-info">
+            應用程式套件識別碼 (Package Name)：<code>com.aistudio.bounceinmind.game</code><br>
+            最新修訂日期：2026 年 9 月 20 日 ｜ 生效日期：2026 年 9 月 20 日
+        </div>
+        <div class="tag-pill">適用於 Android 15+ / Google Play 政策合規</div>
+    </header>
 
-    <p>歡迎使用由我們團隊開發的<strong>《磚心反彈》（Bounce in Mind，以下簡稱「本遊戲」）</strong>。我們非常重視您的個人隱私與數據安全。本《隱私權政策》旨在說明我們如何收集、使用、儲存及保護您的個人資訊，以及您所擁有的數據權利。</p>
-
-    <h2>1. 我們收集的資訊類型</h2>
-    <p>為提供順暢的遊戲體驗、保存存檔進度與處理內購服務，我們可能會收集以下資訊：</p>
-    <ul>
-        <li><strong>帳號與識別資訊：</strong>當您使用 Google 帳號登入時，我們會收集您的 Google Account ID、公開暱稱與頭像（透過 Google Credential Manager）。</li>
-        <li><strong>遊戲進度與戰績：</strong>包含關卡完成度、得分記錄、金幣與鑽石數量、天賦解鎖狀況、戰術軍備背包道具數量等。</li>
-        <li><strong>內購交易資訊：</strong>當您購買「付費鑽石禮包」時，所有交易將由 Google Play Billing 處理。我們僅接收交易成功之驗證收據與訂單編號，<strong>不會儲存您的信用卡號或敏感支付資料</strong>。</li>
-        <li><strong>裝置與技術資訊：</strong>包含匿名裝置型號、作業系統版本、網路連線狀態，用於最佳化遊戲效能與防止作弊。</li>
-    </ul>
-
-    <h2>2. 資訊的使用方式</h2>
-    <p>我們收集的資訊僅用於以下特定目的：</p>
-    <ul>
-        <li>維持遊戲核心功能運作、雲端存檔同步與排行榜展示。</li>
-        <li>處理應用內購買（IAP）並發放對應之虛擬商品（鑽石、金幣、道具）。</li>
-        <li>檢測並防止作弊、異常修改或破壞遊戲公平性之行為。</li>
-        <li>提供客戶支援與處理玩家反饋。</li>
-    </ul>
-
-    <h2>3. 第三方服務供應商</h2>
-    <p>本遊戲整合了以下合規的第三方服務 SDK，這些服務可能會根據其各自的隱私權政策收集技術資訊：</p>
-    <ul>
-        <li><strong>Google Play Services & Google Identity：</strong>用於玩家帳號安全登入與身份驗證。</li>
-        <li><strong>Google Play Billing API：</strong>用於處理應用內購買服務。</li>
-        <li><strong>Firebase (Google Cloud Platform)：</strong>用於排行榜雲端同步與系統通知。</li>
-    </ul>
-
-    <h2>4. 資料儲存與安全保護</h2>
-    <p>您的本地遊戲進度會安全加密儲存於裝置的加密資料庫中（Room DB）。雲端同步數據傳輸皆採用 HTTPS/SSL 加密安全協定。我們採取合理的技術與管理措施，防止您的資料遭未經授權的存取、洩露或毀損。</p>
-
-    <h2>5. 兒童隱私保護</h2>
-    <p>本遊戲適合一般大眾遊玩。我們不會刻意收集未滿 13 歲（或當地法律規定之最低年齡）兒童的個人可識別資訊。若您發現有兒童未經家長同意提供個人資料，請與我們聯繫，我們將立即採取措施予以刪除。</p>
-
-    <h2>6. 您的權利與資料刪除要求 (Data Deletion)</h2>
-    <p>您擁有查詢、更正或要求刪除您個人資料的權利。若您希望刪除《磚心反彈》中的帳號資料與雲端存檔，您可以：</p>
-    <ul>
-        <li>透過遊戲內設定選單點擊「清除數據 / 登出」。</li>
-        <li>寄送電子郵件至：<a href="mailto:teabag.hsu@gmail.com">teabag.hsu@gmail.com</a>，我們將於 7 個工作天內為您完成資料刪除。</li>
-    </ul>
-
-    <h2>7. 隱私權政策之修改</h2>
-    <p>我們可能會不定期更新本隱私權政策。任何修改將於此網頁發布後立即生效。建議您定期檢視本頁面以瞭解最新資訊。</p>
-
-    <h2>8. 聯絡我們</h2>
-    <p>若您對本隱私權政策有任何疑問或建議，請隨時透過以下方式與我們聯繫：</p>
-    <p>電子郵件：<a href="mailto:teabag.hsu@gmail.com">teabag.hsu@gmail.com</a></p>
-
-    <div class="footer">
-        &copy; 2026 磚心反彈 Bounce in Mind. All Rights Reserved.
+    <div class="highlight-box">
+        歡迎遊玩《磚心反彈》（Bounce in Mind，以下簡稱「本遊戲」或「我們」）。我們極為重視您的隱私權。本政策說明我們如何透過本遊戲收集、使用、儲存及保護您的個人資訊，以及您所享有的數據控制權利。
     </div>
+
+    <h2>1. 我們收集的資料項目與用途 (Information We Collect)</h2>
+    <p>為了維護遊戲的核心體驗、雲端紀錄同步、防作弊機制與帳號復原，我們可能在您使用本服務時收集並處理以下資訊：</p>
+
+    <div class="table-wrap">
+        <table>
+            <thead>
+                <tr>
+                    <th>資料類型</th>
+                    <th>收集方式與來源</th>
+                    <th>主要目的與用途</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>帳號識別碼 (User ID)</strong></td>
+                    <td>Google 帳號認證 / Firebase Auth 匿名登入</td>
+                    <td>用於識別玩家身分、維護全球競速與無盡模式排行榜、跨裝置存檔轉移 (Cross-Device Save)。</td>
+                </tr>
+                <tr>
+                    <td><strong>遊戲進度與戰績</strong></td>
+                    <td>本機 Room 資料庫備份 / 雲端 Firestore</td>
+                    <td>記錄關卡星級、最高連擊 (Combo)、軍備背包與解鎖外觀、體力恢復倒數。</td>
+                </tr>
+                <tr>
+                    <td><strong>內購交易憑據</strong></td>
+                    <td>Google Play In-App Billing API</td>
+                    <td>處理去廣告 (Remove Ads)、通行證與贊助商品之兌現與重啟恢復，本遊戲<strong>絕不收集或儲存您的信用卡號等金融個資</strong>。</td>
+                </tr>
+                <tr>
+                    <td><strong>裝置與診斷資訊</strong></td>
+                    <td>Google Mobile Ads (AdMob) / Firebase</td>
+                    <td>包含匿名廣告 ID (AAID)、作業系統版本、崩潰記錄與連線效能，用於防範點擊欺詐及穩定性最佳化。</td>
+                </tr>
+                <tr>
+                    <td><strong>推播推播權杖 (FCM Token)</strong></td>
+                    <td>Firebase Cloud Messaging (FCM)</td>
+                    <td>用於向已授權通知的裝置發送體力全滿提醒、賽季更新與跨裝置轉移核銷通知。</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h2>2. 系統權限使用說明 (Android Permissions)</h2>
+    <p>本遊戲依循最小權限原則（Principle of Least Privilege），僅要求保障遊戲體驗所必要之權限：</p>
+    <ul>
+        <li><code>android.permission.INTERNET</code>：用於連線 Firebase 雲端存檔、即時排行榜、Google Play Billing 交易與 Google AdMob 廣告。</li>
+        <li><code>android.permission.POST_NOTIFICATIONS</code>（Android 13+）：當您主動授權時，用於在背景接收體力恢復完畢、特殊活動或轉移進度提醒。您可隨時在系統設定中自由開啟或關閉。</li>
+        <li><code>com.android.vending.BILLING</code>：提供 Google Play 官方安全交易通道。</li>
+    </ul>
+    <div class="highlight-box">
+        <strong>注意：</strong> 本遊戲內建的「戰績卡分享」功能採用 Android 系統標準之 <code>FileProvider</code> 與系統相片選擇器（Photo Picker），<strong>完全無需索取額外的外部儲存空間讀寫權限（Zero Storage Permission）</strong>。
+    </div>
+
+    <h2>3. 第三方技術合作夥伴與 SDK 揭露 (Third-Party Services)</h2>
+    <p>為提供高水準的遊戲基礎架構與營運支援，本應用程式整合了符合業界資安標準的第三方 SDK：</p>
+    <ul>
+        <li><strong>Google Play 服務與 Google Play 結帳 (Billing API)</strong>：提供帳號鑑別與安全購買處理。<br>
+            <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google 隱私權政策</a>
+        </li>
+        <li><strong>Google AdMob</strong>：提供個人化與非個人化獎勵影片/橫幅廣告。<br>
+            <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google 廣告隱私權條款</a>
+        </li>
+        <li><strong>Firebase (Authentication, Cloud Firestore, Cloud Messaging, App Check)</strong>：提供資料加密傳輸、後端雲端存檔與防濫用驗證。<br>
+            <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase 數據安全承諾</a>
+        </li>
+    </ul>
+
+    <h2>4. 兒童隱私保護 (Children's Privacy)</h2>
+    <p>本遊戲為一般大眾休閒敏捷闖關遊戲，無年齡限制，且恪守 COPPA（美國兒童線上隱私保護法）及 Google Play 開發人員政策。我們不會故意收集 13 歲以下兒童的個人辨識身分資訊。若您身為監護人並發現您的孩童在未經同意的情況下提供了個人資料，請聯絡我們，我們將立即從伺服器端清除相關紀錄。</p>
+
+    <h2>5. 資料安全與加密 (Data Security)</h2>
+    <p>所有本機資料均妥善存放於應用程式沙盒（Sandbox）之 Room 資料庫中；與雲端伺服器（Firebase）之間的所有通訊皆經由 HTTPS / TLS 傳輸層加密協定保護，並受 Firebase App Check 嚴密防護以防止未授權讀取與偽造請求。</p>
+
+    <h2>6. 用戶權利與資料刪除請求 (User Rights & Data Deletion)</h2>
+    <p>依據 Google Play 資料安全性規範與個人資料保護相關法規，您對您的個人資料享有完全的主控權：</p>
+    <ul>
+        <li><strong>本機資料重置</strong>：您可透過遊戲內「系統設定」隨時點擊清空本機快取與遊戲存檔。</li>
+        <li><strong>雲端帳號及遊戲數據刪除 (Data Deletion Request)</strong>：若您希望徹底刪除儲存在 Firebase 雲端伺服器中的帳號 UID、雲端存檔紀錄與排行榜資料，您可隨時透過以下專屬聯絡信箱提交申請，我們將在接獲請求後 7 個工作天內完成資料清除：
+            <br>
+            <strong>資料刪除專用窗口：</strong> <a href="mailto:teabag.hsu@gmail.com?subject=[Bounce%20in%20Mind]%20Data%20Deletion%20Request">teabag.hsu@gmail.com</a>
+        </li>
+    </ul>
+
+    <h2>7. 政策更新 (Policy Updates)</h2>
+    <p>我們可能會隨著遊戲功能擴充或適用法規的演進，不定期修訂本隱私權條款。任何實質變更均將更新於本網頁，並在遊戲更新日誌中公告標記。</p>
+
+    <h2>8. 聯絡我們 (Contact Us)</h2>
+    <p>如果您對本隱私權政策或個人資料處理有任何疑問、建議或行使權益要求，歡迎隨時與開發團隊聯繫：</p>
+    <ul>
+        <li><strong>開發者／團隊：</strong> 《磚心反彈》開發團隊 (Bounce in Mind Team)</li>
+        <li><strong>聯絡電子郵件：</strong> <a href="mailto:teabag.hsu@gmail.com">teabag.hsu@gmail.com</a></li>
+        <li><strong>官方隱私權公開網址：</strong> <a href="https://teabaghsu-hub.github.io/bounce-in-mind/">https://teabaghsu-hub.github.io/bounce-in-mind/</a></li>
+    </ul>
+
+    <footer>
+        <p>&copy; 2026 磚心反彈 Bounce in Mind. All Rights Reserved.</p>
+    </footer>
+</div>
 
 </body>
 </html>
